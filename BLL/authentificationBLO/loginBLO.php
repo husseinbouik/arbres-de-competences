@@ -1,5 +1,5 @@
 <?php
-include_once "../../DAL/auth/adminDAO.php";
+include_once "../../DAL/authentification/adminDAO.php";
 class LoginBLO extends AdminDAO {
     private $email;
     private $password;

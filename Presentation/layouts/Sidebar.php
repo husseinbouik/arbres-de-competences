@@ -46,7 +46,7 @@
                 
                 <!-- Logout Button -->
                     <li class="nav-item">
-                        <a href="../BLL/authBLO/logoute.php" class="nav-link">
+                        <a href="../BLL/authentificationBLO/logoute.php" class="nav-link">
                             <i class="nav-icon fas fa-sign-out-alt text-danger"></i>
                             <p>
                                 Logout
@@ -57,7 +57,7 @@
         </nav>
 
         <!-- <div class="p-3 d-flex align-items-end">
-            <a href="../../../BLL/authBLO/logoute.php" class="btn btn-danger w-100">
+            <a href="../../../BLL/authentificationBLO/logoute.php" class="btn btn-danger w-100">
                 <i class="nav-icon fas fa-sign-out-alt me-2"></i>
                 Logout
             </a>

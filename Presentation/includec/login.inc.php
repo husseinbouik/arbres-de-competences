@@ -1,6 +1,6 @@
 <?php
 include_once "../../Entities/admin.php";
-include_once "../../BLL/authBLO/loginBLO.php";
+include_once "../../BLL/authentificationBLO/loginBLO.php";
 
 if (isset($_POST['loginSubmit'])) {
     $email = $_POST['email'];
@@ -8,7 +8,7 @@ if (isset($_POST['loginSubmit'])) {
     $role = $_POST['role'];
 
     if ($role !== "admin") {
-        header("location: ../../Presentation/auth/login.php?error=worningAdmin");
+        header("location: ../../Presentation/authentification/login.php?error=worningAdmin");
         exit();
     } else {
         $admin = new Admin();

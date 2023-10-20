@@ -4,7 +4,7 @@ session_start(); // start session
 
 // Check if Admin is not logged in
 if (!isset($_SESSION['Nom'])) {
-    header("Location: ../../Admin/auth/login.php?login=none");
+    header("Location: ../../Admin/authentification/login.php?login=none");
     exit();
 }
 

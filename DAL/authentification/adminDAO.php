@@ -10,13 +10,13 @@ include_once "../../loader.php";
     
         if (!$stmt->execute(array($email))) {
             $stmt = null;
-            header("location: ../../Presentation/auth/login.php?error=stmtfailed");
+            header("location: ../../Presentation/authentification/login.php?error=stmtfailed");
             exit();
         }
     
         if ($stmt->rowCount() == 0) {
             // $stmt = null;
-            header("location: ../../Presentation/auth/login.php?error=usernotfoundEmail");
+            header("location: ../../Presentation/authentification/login.php?error=usernotfoundEmail");
             exit();
         }
     
@@ -28,7 +28,7 @@ include_once "../../loader.php";
           if ($checkPass == false) {
       
             $stmt = null;
-            header("location: ../../Presentation/auth/login.php?error=worningpassword");
+            header("location: ../../Presentation/authentification/login.php?error=worningpassword");
             exit();
           } else
           if ($checkPass == true && $role == "admin") {
@@ -37,12 +37,12 @@ include_once "../../loader.php";
       
             if (!$stmt->execute(array($email, $loginData[0]['Password']))) {
               $stmt = null;
-              header('location: ../../Presentation/auth/login.php?error=stmtfailed');
+              header('location: ../../Presentation/authentification/login.php?error=stmtfailed');
               exit();
             }
             if ($stmt->rowCount() == 0) {
               $stmt = null;
-              header('location: ../../Presentation/auth/login.php?error=usernotfoundPass');
+              header('location: ../../Presentation/authentification/login.php?error=usernotfoundPass');
               exit();
             }
       

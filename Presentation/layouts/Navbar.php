@@ -18,7 +18,7 @@
             <div class="dropdown-menu dropdown-menu-right">
                 <a href="#" class="dropdown-item"><?php echo $_SESSION['Nom']; ?></a>
                 <div class="dropdown-divider"></div>
-                <a href="../BLL/authBLO/logoute.php" class="dropdown-item">Logout</a>
+                <a href="../BLL/authentificationBLO/logoute.php" class="dropdown-item">Logout</a>
             </div>
         </li>
     </ul>

@@ -28,22 +28,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Id` int(11) NOT NULL,
   `Nom` varchar(50) NOT NULL,
   `Prenom` varchar(50) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `Password` varchar(255) NOT NULL,
-  `Role` varchar(50) NOT NULL,
-  PRIMARY KEY (`Id`)
+  `Role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 
 --
 -- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`Id`, `Nom`, `Prenom`, `Email`, `Password`, `Role`) VALUES
-(1, 'admin', 'admin', 'jadmin@admin.com', 'password123', 'admin'),
+(1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$kZnwkPAoWrm4lpjUSHUpCer4PG2ibvRKrJfMyTbdXK4MTDyl1.3li', 'admin'),
 (2, 'Hamid', 'Achaou', 'hamid@gmail.com', 'password456', 'user'),
 (3, 'betroji', 'jalil', 'jalil@gmail.com', 'password789', 'user');
 
